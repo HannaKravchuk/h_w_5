@@ -1,0 +1,15 @@
+#my first work with GIT:
+- git init
+- git config
+- git branch
+- git checkout
+- git merge
+- git add .
+- git commit -m
+- git status
+- git diff
+- git rm
+- git remote -v
+- git pull
+- git push
+- git reset
