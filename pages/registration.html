@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <header class="header-main container">
+    <nav class="header-main-nav">
+      <ol>
+        <li><a href="../index.html">Home page</a></li>
+        <li><a href="possibilities.html">Possibilities</a></li>
+        <li><a href="cataloge.html">Cataloge</a>
+          <ol>
+            <li><a href="cataloge/cataloge-1.html">Nature photos</a></li>
+            <li><a href="cataloge/cataloge-2.html">Portraits</a></li>
+            <li><a href="cataloge/cataloge-3.html">Off-site events</a></li>
+          </ol>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="page-nav.html">Navigation</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="registration.html">Registration</a></li>
+      </ol>
+    </nav>
+    <div class="header-main-logo">
+      <img src="../images/logo1.jpeg" alt="logo">
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="background-img">
+      <div class="container">
+        <h1 id="top">Registration</h1>
+
+        <form action="https://tests.fomenko.top/echo/index.php" method="get" class="registration">
+          <div class="form-group">
+            <label for="login">Login</label>
+            <input id="login" required name="login" minlength="5" maxlength="15" placeholder="Tap your login"
+              type="text">
+          </div>
+          <div class="form-group">
+            <label for="file">Your photo</label>
+            <input id="file" name="file" type="file" class="file">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" placeholder="E-mail" type="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="pass" minlength="5" maxlength="15" placeholder="Password" type="password">
+          </div>
+          <div class="form-group">
+            <label for="date">Date of birth</label>
+            <input id="date" name="date" type="date">
+          </div>
+          <div class="form-group">
+            <label for="phone">Your telefon number</label>
+            <input id="phone" type="tel" name="phone" placeholder="Tap your telefon number">
+          </div>
+          <div class="form-group">
+            <h4>Select your gender</h4>
+            <input id="gender-male" type="radio" name="gender" value="male">
+            <label for="gender-male">Male</label>
+          </div>
+          <div class="form-group">
+            <input id="gender-female" type="radio" name="gender" value="female">
+            <label for="gender-female">Female</label>
+          </div>
+          <div class="form-group">
+            <h4>Your favourite animals</h4>
+            <input id="animal_shark" checked name="animal" value="sharks" type="checkbox">
+            <label for="animal_shark">Sharks</label>
+          </div>
+          <div class="form-group">
+            <input id="animal_spider" name="animal" value="spider" type="checkbox">
+            <label for="animal_spider">Spiders</label>
+          </div>
+          <div class="form-group">
+            <input id="animal_kitten" name="animal" value="kitten" type="checkbox">
+            <label for="animal_kitten">Kitten</label>
+          </div>
+          <div class="form-group">
+            <input id="animal_dog" name="animal" value="dogs" type="checkbox">
+            <label for="animal_dog">Dogs</label>
+          </div>
+          <div class="form-group">
+            <input id="animal_bird" name="animal" value="bird" type="checkbox">
+            <label for="animal_bird">Birds</label>
+          </div>
+          <div class="form-group">
+            <label for="text">About yourself:</label>
+            <textarea placeholder="Tap text about yourself..." name="text" id="text" cols="60" rows="10"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn">Sent</button>
+            <button type="reset" class="btn">Reset</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer container">
+    <div>
+      <p>&copy; 15.10.2024 Kravchuk</p>
+    </div>
+  </footer>
+</body>
+
+</html>

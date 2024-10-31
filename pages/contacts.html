@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <header class="header-main container">
+    <nav class="header-main-nav">
+      <ol>
+        <li><a href="../index.html">Home page</a></li>
+        <li><a href="possibilities.html">Possibilities</a></li>
+        <li><a href="cataloge.html">Cataloge</a>
+          <ol>
+            <li><a href="cataloge/cataloge-1.html">Nature photos</a></li>
+            <li><a href="cataloge/cataloge-2.html">Portraits</a></li>
+            <li><a href="cataloge/cataloge-3.html">Off-site events</a></li>
+          </ol>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="page-nav.html">Navigation</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="registration.html">Registration</a></li>
+      </ol>
+    </nav>
+    <div class="header-main-logo">
+      <img src="../images/logo1.jpeg" alt="logo">
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="background-img">
+      <div class="container">
+        <h1 id="top">Contacts</h1>
+
+        <div>
+          <h2>Adres</h2>
+          <p>Kharkiv</p>
+          <p>Derjavinska 30a</p>
+          <p>2rd floor</p>
+        </div>
+        <div>
+          <h2>Work time</h2>
+          <p>Mn-Fr 8.00-16.00</p>
+        </div>
+        <div>
+          <div>
+            <h2>Do you have a quetions? Lets go!</h2>
+            <form action="https://tests.fomenko.top/echo/index.php" method="get">
+              <div class="form-group">
+                <label for="login">Login</label>
+                <input id="login" required name="login" minlength="5" maxlength="15" placeholder="Tap your login"
+                  type="text">
+              </div>
+              <div class="form-group">
+                <label for="email">Your email</label>
+                <input id="email" type="email" name="email" placeholder="Tap your e-mail adres">
+              </div>
+              <div class="form-group">
+                <label for="phone">Your telefon number</label>
+                <input id="phone" type="tel" name="phone" placeholder="Tap your telefon number">
+              </div>
+              <div class="form-group">
+                <label for="textarea">Ask your quetion:</label>
+                <textarea id="textarea" name="quation" cols="60" rows="10" placeholder="Tap your quetion"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn">Send</button>
+                <button type="reset" class="btn">Reset</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div>
+          <h2>Our adres Google</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13724.211627726228!2d36.22297518576133!3d50.00285651832091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2snl!4v1729035417835!5m2!1sru!2snl"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer container">
+    <div>
+      <p>&copy; 15.10.2024 Kravchuk</p>
+    </div>
+  </footer>
+</body>
+
+</html>

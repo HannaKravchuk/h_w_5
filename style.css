@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.background-img {
+    margin: -28px 0 0 0;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-image: url(images/fon.jpeg);
+    background-color: #c9d5d5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: rgb(46, 65, 28);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main-nav ol li {
+    position: relative;
+    float: left;
+}
+
+.header-main-nav ol li a {
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: rgb(232, 232, 219);
+}
+
+.header-main-nav ol li a:hover {
+    color: rgb(232, 232, 219);
+    background-color: rgb(61, 49, 40);
+    border: 0.5px solid rgb(230, 209, 209);
+    border-radius: 5px;
+    text-shadow: rgb(236, 230, 205) 1px 0 2px;
+}
+
+.header-main ol li ol {
+    position: absolute;
+    left: 0;
+    width: 120px;
+    background: rgb(61, 49, 40);
+    border-radius: 5px;
+    display: none;
+}
+
+.header-main-nav ol li ol li {
+    width: 100%;
+    border: 0.5px solid rgb(230, 209, 209);
+    border-radius: 5px;
+}
+
+.header-main-nav ol li:hover>ol {
+    display: initial;
+}
+
+.header-main-logo {
+    position: relative;
+    float: right;
+    margin-top: 3px;
+}
+
+.header-main-logo img {
+    width: 45px;
+    height: 45px;
+}
+
+.main {
+    padding-top: 80px;
+}
+
+main h1 {
+    padding: 50px 0 50px 0;
+    text-shadow: rgb(141, 139, 130) 1px 0 4px;
+    text-align: center;
+}
+
+.main p {
+    line-height: 28px;
+    text-align: justify;
+    text-indent: 5px;
+}
+
+.back-top a {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(46, 65, 28);
+    text-shadow: rgb(141, 139, 130) 1px 0 2px;
+}
+
+.footer {
+    height: 50px;
+    width: 100vw;
+    position: absolute;
+    background-color: rgb(46, 65, 28);
+    padding-top: 15px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Possibilities */
+
+.possibilities-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.possibilities-title {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.main-list {
+    font-size: 20px;
+    width: 60vw;
+}
+
+.spare-list {
+    font-size: 14px;
+    width: 50vw;
+}
+
+.possibilities-item {
+    font-weight: bold;
+    margin: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+}
+
+.main-list .possibilities-item {
+    background-color: rgba(166, 212, 152, 0.802);
+}
+
+.spare-list .possibilities-item {
+    background-color: rgba(219, 200, 115, 0.762);
+}
+
+.main-list .item-inner {
+    background-color: rgba(147, 173, 82, 0.699);
+}
+
+.new {
+    display: inline-block;
+    background-color: yellow;
+    font-size: 15px;
+    margin: 0 25px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Cataloge */
+
+.main-navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-navbar-item {
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    background-color: rgb(46, 65, 28);
+    border-radius: 5px;
+}
+
+.main-navbar-item:hover {
+    background-color: darkolivegreen;
+}
+
+.main-navbar-item a {
+    color: antiquewhite;
+}
+
+.cataloge-title {
+    font-weight: lighter;
+    font-size: 26px;
+    color: rgb(255, 55, 175);
+    border-bottom: 1px dotted rgb(172, 10, 148);
+}
+
+.cataloge-text {
+    background-color: rgba(255, 196, 250, 0.133);
+}
+
+.cataloge-link {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.cataloge-link:hover {
+    color: rgb(255, 55, 175);
+    border-bottom: none;
+}
+
+.comments {
+    color: rgb(46, 65, 28);
+    text-transform: uppercase;
+}
+
+/* Cataloge-1 */
+
+#top-cataloge {
+    text-align: center;
+}
+
+.back-to {
+    color: black;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.back-to:hover {
+    color: rgb(239, 73, 239);
+    border-bottom: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.cataloge-article {
+    text-align: justify;
+}
+
+.cataloge-article p::first-letter {
+    text-transform: uppercase;
+    color: green;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Gallery */
+
+.background-img-1 {
+    background-image: url(images/dotes.jpeg);
+    background-repeat: repeat;
+    margin-top: -30px;
+}
+
+.gallery-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.gallery-item a {
+    color: black;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(46, 65, 28);
+}
+
+.gallery-item:hover {
+    border: 3px solid transparent;
+}
+
+/* nav-page */
+
+.nav-interne {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 25px 0;
+}
+
+.nav-interne li a {
+    background-color: rgb(170, 238, 181);
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0 35px;
+}
+
+.nav-interne li a:hover {
+    background-color: rgb(46, 65, 28);
+    color: white;
+}
+
+.nav-page-part {
+    margin: 30px 0;
+    border-bottom: 1px dotted black;
+    border-radius: 5px;
+    background-color: rgba(245, 215, 177, 0.077);
+}
+
+/* contact */
+
+form {
+    max-width: 600px;
+    margin: 40px 0;
+    background-color: rgba(46, 65, 28, 0.649);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.registration {
+    margin: 0 25%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: rgb(223, 255, 134);
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    color: rgb(46, 65, 28);
+    background-color: rgb(223, 255, 134);
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+}
+
+input[type="file"]:hover {
+    border: 1px dotted black;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+label {
+    padding-left: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 33vh;
+    font-size: 1em;
+    background-color: rgb(223, 255, 134);
+    border-radius: 5px;
+}
+
+.btn {
+    margin-bottom: 5px;
+    padding: 15px 40px;
+    border: 1px solid rgb(46, 65, 28);
+    outline: none;
+    color: rgb(46, 65, 28);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: darkolivegreen;
+}
+
+.form-group {
+    margin: 10px 10px;
+}
