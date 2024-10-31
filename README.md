@@ -1,4 +1,4 @@
-#my first work with GIT:
+# my first work with GIT:
 - git init
 - git config
 - git branch
